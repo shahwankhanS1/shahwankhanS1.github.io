@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SHAHWAN | Portfolio</title>
+<meta name="description" content="Computer Hardware and Maintenance diploma student moving into Network Administration and Cloud Support.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  /* Blueprint palette: change these to restyle the whole page */
+  :root {
+    --paper: #12284a;      /* blueprint blue */
+    --paper-2: #183258;    /* slightly lighter panels */
+    --line: #4f6d9c;       /* drawing lines */
+    --ink: #eaf1fb;        /* main text */
+    --muted: #a9bad4;      /* secondary text */
+    --accent: #f2b544;     /* amber, used only for links and buttons */
+    --display: "Bricolage Grotesque", "Trebuchet MS", sans-serif;
+    --body: "IBM Plex Sans", "Segoe UI", Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background-color: var(--paper);
+    background-image:
+      linear-gradient(rgba(79,109,156,.18) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(79,109,156,.18) 1px, transparent 1px);
+    background-size: 32px 32px;
+    color: var(--ink);
+    font-family: var(--body);
+    line-height: 1.65;
+    font-size: 17px;
+  }
+  a { color: var(--accent); }
+  a:focus-visible, .btn:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 22px; }
+
+  header.top { padding: 18px 0; border-bottom: 1px solid var(--line); background: var(--paper); }
+  header.top .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+  nav a { margin-right: 18px; text-decoration: none; color: var(--ink); }
+  nav a:hover { color: var(--accent); }
+
+  .hero { padding: 72px 0 56px; }
+  .hero h1 {
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: clamp(2.6rem, 9vw, 5.2rem);
+    line-height: 1.02;
+    margin: 0 0 18px;
+    letter-spacing: -0.02em;
+  }
+  .hero p { max-width: 56ch; color: var(--muted); font-size: 1.1rem; margin: 0 0 28px; }
+  .btn {
+    display: inline-block; padding: 12px 22px; margin: 0 10px 10px 0;
+    background: var(--accent); color: #1b1b1b; font-weight: 500;
+    text-decoration: none; border: 2px solid var(--accent);
+  }
+  .btn.ghost { background: transparent; color: var(--ink); border-color: var(--line); }
+
+  section { padding: 44px 0; border-top: 1px solid var(--line); }
+  h2 { font-family: var(--display); font-size: 1.9rem; margin: 0 0 18px; }
+  section p { max-width: 62ch; }
+
+  /* Skills laid out like a spec sheet */
+  .scroll { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; background: var(--paper-2); border: 1px solid var(--line); }
+  th, td { text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-weight: 500; color: var(--muted); width: 34%; }
+  tr:last-child th, tr:last-child td { border-bottom: 0; }
+
+  .project { background: var(--paper-2); border: 1px solid var(--line); padding: 22px; }
+  .project h3 { font-family: var(--display); margin: 0 0 6px; font-size: 1.35rem; }
+  .project .tech { color: var(--muted); margin: 0 0 12px; }
+  .project .links a { margin-right: 18px; }
+
+  footer { padding: 30px 0 50px; border-top: 1px solid var(--line); color: var(--muted); font-size: .95rem; }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <strong>SHAHWAN</strong>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <div class="hero">
+      <h1>SHAHWAN</h1>
+      <p>Computer Hardware and Maintenance student, learning networking, Linux and cloud basics to start a career in Network Administration and Cloud Support.</p>
+      <a class="btn" href="#projects">See my project</a>
+      <a class="btn ghost" href="resume.pdf" download>Download resume</a>
+    </div>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>I'm in the 2nd year of my diploma in Computer Hardware and Maintenance at Government Polytechnic College, Rewa, Madhya Pradesh. I like working with hardware and I taught myself HTML, CSS and JavaScript from YouTube. Right now I'm learning Python and building up my networking and cloud basics.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="scroll">
+        <table>
+          <tr><th>Hardware</th><td>Computer hardware, chassis-level maintenance and troubleshooting</td></tr>
+          <tr><th>Web</th><td>HTML, CSS, JavaScript (basic)</td></tr>
+          <tr><th>Learning now</th><td>Python, networking basics, Linux, cloud fundamentals</td></tr>
+          <tr><th>College subjects</th><td>Computer architecture, digital electronics, operating systems, algorithms</td></tr>
+        </table>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Retro Ambient Radio</h3>
+        <p class="tech">HTML, CSS, JavaScript</p>
+        <p>A vintage saloon-style radio website that plays ambient audio streams from YouTube. I designed the look and wrote the playback logic myself.</p>
+        <!-- Jab site live ho jaye, ye links wapas daal dena (# ki jagah asli link):
+        <p class="links">
+          <a href="#">Open live site</a>
+          <a href="#">View code on GitHub</a>
+        </p>
+        -->
+      </div>
+      <!-- Add more projects here: copy the whole <div class="project"> block -->
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Looking for an internship or an entry-level role. Email is the fastest way to reach me.</p>
+      <p>
+        Email: <a href="mailto:shahvankhan145@gmail.com">shahvankhan145@gmail.com</a><br>
+        GitHub: <a href="https://github.com/shahwankhanS1">github.com/shahwankhanS1</a>
+      </p>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 SHAHWAN. Rewa, Madhya Pradesh.</div>
+</footer>
+
+</body>
+</html>
